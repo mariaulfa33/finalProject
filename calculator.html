@@ -1,0 +1,71 @@
+<!DOCTYPE = <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ayo berhitung!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="calculator.css" />
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <div class = "banner">
+        <h1>Kalkulator Jajan</h1>
+    </div>
+
+    <div class="box">
+        <div class="display">
+        <input type="text" readonly size="10" id="d" value="Berapa Jumlah uang Mu?">
+        </div>
+
+        <div class="keys">
+            <p>
+                <input type="button" class="button gray" value="disc" onclick='v("*0.9")'>
+                <input type="button" class="button gray" value="copy" onclick='l()'>
+                <input type="button" class="button gray" value="del" onclick='v("del")'>
+                <input type="button" class="button pink" value="/" onclick='v("/")'>
+            </p>
+            <p>
+                <input type="button" class="button black" value="7" onclick='v("7")'>
+                <input type="button" class="button black" value="8" onclick='v("8")'>
+                <input type="button" class="button black" value="9" onclick='v("9")'>
+                <input type="button" class="button pink" value="*" onclick='v("*")'>
+            </p>
+            <p>
+                <input type="button" class="button black" value="4" onclick='v("4")'>
+                <input type="button" class="button black" value="5" onclick='v("5")'>
+                <input type="button" class="button black" value="6" onclick='v("6")'>
+                <input type="button" class="button pink" value="-" onclick='v("-")'>
+            </p>
+            <p>
+                <input type="button" class="button black" value="1" onclick='v("1")'>
+                <input type="button" class="button black" value="2" onclick='v("2")'>
+                <input type="button" class="button black" value="3" onclick='v("3")'>
+                <input type="button" class="button pink" value="+" onclick='v("+")'>
+            </p>
+            <p>
+                <input type="button" class="button black" value="0" onclick='v("0")'>
+                <input type="button" class="button black" value="000" onclick='v("000")'>
+                <input type="button" class="button black" value="C" onclick='c("")'>
+                <input type="button" class="button orange" value="=" onclick='v("=")'>
+            </p>
+            <p id = "inputMenu">
+                INPUT MENU
+            </p>
+
+            <p>
+                <input type="button" class="button food" value="Nasi" onclick='v("-3000")'>
+            </p>
+            <p>
+                <input type="button" class="button food" value="sayur" onclick='v("-1000")'>
+            </p>
+            <p>
+                    <input type="button" class="button food" value="Ayam/ikan" onclick='v("-5000")'>
+            </p>
+            <p>
+                    <input type="button" class="button food" value="kerupuk/gorengan" onclick='v("-500")'>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
